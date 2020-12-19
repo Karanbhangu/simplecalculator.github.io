@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Calculator</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
+    <!-- Bootstrap CSS: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>  
+<body class="bodylight" id="light">
+    <div class="contained" id="maindiv">
         <form action="/" name="calci">
-        <h3>First Number:</h3> <br><input type="text" class="padds" name="firstnumber" id="firstnum"><br><br>
-        <h3>Second Number: </h3><br><input type="text" class="padds" name="secondnumber" id="secondnum"><br><br>
-        <h3>Result:</h3> <br> <input type="text" class="padds" name="result" id="result"><br><br>
-        <input type="radio" name="operations" id="add" class="radios"><b>+</b>
-        <input type="radio" name="operations" id="substract" class="radios"><b>-</b>
-        <input type="radio" name="operations" id="multiply" class="radios"><b>*</b>
-        <input type="radio" name="operations" id="divide" class="radios"><b>/</b> <br>
+        <h3 class="h3light" id="heading1" name="heading1">First Number:</h3> <br><input type="text" class="padds" name="firstnumber" id="firstnum"><br><br>
+        <h3 class="h3light" id="heading2">Second Number: </h3><br><input type="text" class="padds" name="secondnumber" id="secondnum"><br><br>
+        <h3 class="h3light" id="heading3">Result:</h3> <br> <input type="text" class="padds" name="result" id="result"><br><br>
+        <input type="radio" name="operations" id="add" class="radios"><b id="firstop" class="nones">+</b>
+        <input type="radio" name="operations" id="substract" class="radios"><b id="secondop" class="nones">-</b>
+        <input type="radio" name="operations" id="multiply" class="radios"><b id="thirdop" class="nones">*</b>
+        <input type="radio" name="operations" id="divide" class="radios"><b class="nones" id="fourthop">/</b> <br>
     </form><br>
-    <input type="button" value="Calculate" onclick="calculate()">
+    <input type="button" value="Calculate" onclick="calculate()" class="first" id="calcb">
+    <div class="form-check form-switch dark-mode">
+        <input class="form-check-input" type="checkbox" onclick="darkmode()" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault"><span class="noned" id="spaneed">Dark Mode</span></label>
+      </div>
     </div>
 </body>
 <script src="app.js"></script>

@@ -1,29 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: linear-gradient(#6a89cc, #f8c291);
+.bodylight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(#6a89cc, #f8c291);
 }
-.container{
-    border: 2px solid black;
-    padding: 50px 60px;   
-    background-image: linear-gradient(#2ecc71, #1abc9c);
+.contained {
+  display: flex;
+  border: 2px solid black;
+  padding: 50px 60px;
+  background-image: linear-gradient(#2ecc71, #1abc9c);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.radios{
-    margin-left: 14px;
+.radios {
+  margin-left: 14px;
 }
-.padds{
-    padding: 5px 7px;
-    border-radius: 5px;
+.padds {
+  padding: 5px 7px;
+  border-radius: 5px;
 }
-h3{
-    display: inline;
+h3 {
+  display: inline;
 }
-.container:hover{
-    background-image: linear-gradient( #1abc9c, #2ecc71);
+.container:hover {
+  background-image: linear-gradient(#1abc9c, #2ecc71);
+}
+.dark-mode {
+  position: relative;
+  top: 20px;
+}
+.bodydark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(#57606f, #747d8c);
+}
+.contained {
+  display: flex;
+  border: 2px solid black;
+  padding: 50px 60px;
+  background-image: linear-gradient(#2ecc71, #1abc9c);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.radios {
+  margin-left: 14px;
+}
+.padds {
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.h3light {
+  display: inline;
+  font-family: "Cabin", sans-serif;
+}
+.container:hover {
+  background-image: linear-gradient(#1abc9c, #2ecc71);
+}
+.dark-mode {
+  position: relative;
+  top: 20px;
+}
+.h3dark {
+  color: rgb(255, 255, 255);
+  display: inline;
+  font-family: "Cabin", sans-serif;
+}
+.contained2 {
+  display: flex;
+  border: 2px solid black;
+  padding: 50px 60px;
+  background-image: linear-gradient(#576070, #3d3d3d);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.darkb {
+  color: white;
+}
+.calcybut {
+  background-color: #1e3572;
+  color: white;
+  padding: 5px;
+  font-family: "Righteous", cursive;
+}
+.first {
+  padding: 5px;
+  font-family: "Righteous", cursive;
+}
+.noned {
+  font-family: "Lobster Two", cursive;
+}
+.spanny {
+  color: white;
+  font-family: "Lobster Two", cursive;
 }
