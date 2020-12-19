@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/" name="calci">
+        <h3>First Number:</h3> <br><input type="text" class="padds" name="firstnumber" id="firstnum"><br><br>
+        <h3>Second Number: </h3><br><input type="text" class="padds" name="secondnumber" id="secondnum"><br><br>
+        <h3>Result:</h3> <br> <input type="text" class="padds" name="result" id="result"><br><br>
+        <input type="radio" name="operations" id="add" class="radios"><b>+</b>
+        <input type="radio" name="operations" id="substract" class="radios"><b>-</b>
+        <input type="radio" name="operations" id="multiply" class="radios"><b>*</b>
+        <input type="radio" name="operations" id="divide" class="radios"><b>/</b> <br>
+    </form><br>
+    <input type="button" value="Calculate" onclick="calculate()">
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
